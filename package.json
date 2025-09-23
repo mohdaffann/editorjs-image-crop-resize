@@ -34,6 +34,14 @@
   ],
   "author": "Mohammed Affan",
   "license": "MIT",
+  "homepage": "https://github.com/mohdaffann/editorjs-image-crop-resize",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohdaffann/editorjs-image-crop-resize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohdaffann/editorjs-image-crop-resize/issues"
+  },
   "peerDependencies": {
     "@editorjs/editorjs": "^2.29.1",
     "cropperjs": "^1.5.13"
