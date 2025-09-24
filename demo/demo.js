@@ -47,7 +47,12 @@ const saveBtn = document.getElementById('save-btn');
 const oupt = document.getElementById('output');
 saveBtn.addEventListener("click", async () => {
     try {
-        const savedData = await editor.save();
+        let savedData = await editor.save();
+        savedData?.blocks?.forEach((block) => {
+            if (block.type == "image" && block.tunes?.Cropper?.croppedImage) {
+                block.tunes.Cropper.croppedImage = block.tunes.Cropper.croppedImage.slice(0, 20) + '...';
+            }
+        })
         oupt.textContent = JSON.stringify(savedData, null, 2);
         oupt.style.display = 'block';
     } catch (error) {
