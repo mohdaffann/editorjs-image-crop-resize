@@ -1,7 +1,7 @@
 import EditorJS from "@editorjs/editorjs";
 import ImageTool from "@editorjs/image";
-import CropperTune from "../dist/cropper-tune.mjs";
-import '../dist/cropper-tune.css'
+import CropperTune from "../src/CropperTune.js";
+import '../src/CropperTune.css'
 
 const editor = new EditorJS({
     holder: "editorjs",

@@ -18,9 +18,10 @@
     "index.d.ts"
   ],
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --config vite.demo.config.js",
     "build": "vite build",
-    "preview": "vite preview"
+    "build:demo": "vite build --config vite.demo.config.js",
+    "preview": "vite preview --config vite.demo.config.js"
   },
   "keywords": [
     "editorjs",
